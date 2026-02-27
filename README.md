@@ -62,3 +62,18 @@ The solution ensures standardized monitoring deployment and automated security p
 - Alertmanager configuration
 - Centralized logging integration
 - Terraform-based infrastructure provisioning
+- ---
+
+## How to Execute
+
+Run Node Exporter deployment:
+
+```bash
+ansible-playbook -i ansible/inv.yml ansible/deploy.yml
+```
+
+Run security patching:
+
+```bash
+ansible-playbook -i ansible/inv.yml ansible/server_patching.yml
+```
