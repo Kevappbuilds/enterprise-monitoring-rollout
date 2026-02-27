@@ -1,0 +1,13 @@
+[dev]
+ 100.24.107.27 ansible_user=ec2-user
+
+[qa]
+ 3.137.177.250 ansible_user=ubuntu
+
+[prod]
+
+# ( for future production server)
+[all_targets:children]
+dev
+qa
+prod
